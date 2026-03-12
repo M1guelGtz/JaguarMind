@@ -1,26 +1,137 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ededed;
+  --surface: #0a0a0a;
+  --accent: #f59e0b;
+  --accent-light: #fbbf24;
+  --accent-dark: #d97706;
+  --text-muted: #a1a1aa;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-accent-dark: var(--accent-dark);
+  --color-text-muted: var(--text-muted);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Network animation */
+@keyframes dash {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Neon line sweep */
+.neon-line {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(245, 158, 11, 0) 30%,
+    rgba(245, 158, 11, 0.12) 50%,
+    rgba(245, 158, 11, 0) 70%,
+    transparent 100%
+  );
+  animation: neon-sweep 6s ease-in-out infinite;
+}
+
+@keyframes neon-sweep {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+/* Neon text glow */
+.neon-text-glow {
+  text-shadow:
+    0 0 10px rgba(245, 158, 11, 0.5),
+    0 0 30px rgba(245, 158, 11, 0.3),
+    0 0 60px rgba(245, 158, 11, 0.15);
+}
+
+/* Neon border glow */
+.neon-border {
+  box-shadow:
+    0 0 10px rgba(245, 158, 11, 0.1),
+    0 0 30px rgba(245, 158, 11, 0.05),
+    inset 0 0 10px rgba(245, 158, 11, 0.03);
+}
+
+.neon-border:hover {
+  box-shadow:
+    0 0 15px rgba(245, 158, 11, 0.2),
+    0 0 40px rgba(245, 158, 11, 0.1),
+    0 0 80px rgba(245, 158, 11, 0.05),
+    inset 0 0 15px rgba(245, 158, 11, 0.05);
+}
+
+/* Animated gradient border for cards */
+@keyframes gradient-spin {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
