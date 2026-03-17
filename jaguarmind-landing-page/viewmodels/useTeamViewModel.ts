@@ -16,13 +16,13 @@ const TEAM_DATA: TeamMember[] = [
   },
   {
     id: "miguel",
-    name: "Miguel Angel Gutierrez Gomez",
+    name: "Miguel Angel Molina Gómez",
     alias: "MikeTrike",
     age: 21,
     role: "FullStack",
-    githubUrl: "https://github.com/M1guelGtz",
-    linkedinUrl: "https://www.linkedin.com/in/m1guelgtz/",
-    email: "M.angelgutierrezgz@gmail.com",
+    githubUrl: "https://github.com/M1keTrike",
+    linkedinUrl: "https://www.linkedin.com/in/miguel-%C3%A1ngel-molina-g%C3%B3mez-a1480b2a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    email: "miguemolina4570@gmail.com",
     avatar: "/mike_trike.jpeg",
   },
   {
@@ -55,10 +55,10 @@ const TEAM_DATA: TeamMember[] = [
     alias: "Shifu",
     age: 21,
     role: "FullStack",
-    githubUrl: "https://github.com/MoisesFrancoG",
+    githubUrl: "https://github.com/M1guelGtz",
     linkedinUrl:
-      "https://www.linkedin.com/in/moises-franco-guti%C3%A9rrez-7a3874291/",
-    email: "moisesfrancogtz@gmail.com",
+      "https://www.linkedin.com/in/m1guelgtz/",
+    email: "M.angelgutierrezgz@gmail.com",
     avatar: "/migue.jpeg", 
   },
 ];
