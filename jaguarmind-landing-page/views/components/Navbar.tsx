@@ -30,9 +30,9 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="text-xl font-bold tracking-tight">
+        <a href="#" className="text-lg sm:text-xl font-bold tracking-tight">
           <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
             Jaguar
           </span>

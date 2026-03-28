@@ -68,8 +68,8 @@ export default function NeonBackground() {
       <div className="absolute top-[80%] left-0 right-0 h-px neon-line" style={{ animationDelay: "4s" }} />
 
       {/* Corner neon accents */}
-      <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-gradient-to-br from-accent/[0.04] to-transparent" />
-      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-gradient-to-tl from-accent/[0.04] to-transparent" />
+      <div className="absolute top-0 left-0 w-[150px] h-[150px] sm:w-[300px] sm:h-[300px] bg-gradient-to-br from-accent/[0.04] to-transparent" />
+      <div className="absolute bottom-0 right-0 w-[150px] h-[150px] sm:w-[300px] sm:h-[300px] bg-gradient-to-tl from-accent/[0.04] to-transparent" />
 
       {/* Vertical neon streaks */}
       <motion.div

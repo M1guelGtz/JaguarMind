@@ -19,12 +19,12 @@ export default function TeamSection() {
   }
 
   return (
-    <section id="team" className="py-32 px-6 relative">
+    <section id="team" className="py-16 sm:py-32 px-4 sm:px-6 relative">
       {/* Section background glow — neon enhanced */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-accent/[0.05] rounded-full blur-[150px]" />
-        <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-[#ff6b00]/[0.03] rounded-full blur-[100px]" />
-        <div className="absolute bottom-1/4 right-1/4 w-[350px] h-[350px] bg-accent-light/[0.025] rounded-full blur-[90px]" />
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] sm:w-[700px] sm:h-[700px] bg-accent/[0.05] rounded-full blur-[150px]" />
+        <div className="absolute top-1/4 left-1/4 w-[200px] h-[200px] sm:w-[400px] sm:h-[400px] bg-[#ff6b00]/[0.03] rounded-full blur-[100px]" />
+        <div className="absolute bottom-1/4 right-1/4 w-[180px] h-[180px] sm:w-[350px] sm:h-[350px] bg-accent-light/[0.025] rounded-full blur-[90px]" />
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">

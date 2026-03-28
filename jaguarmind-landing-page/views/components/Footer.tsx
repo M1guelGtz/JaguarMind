@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer id="contact" className="py-12 px-6 border-t border-white/[0.05]">
+    <footer id="contact" className="py-8 sm:py-12 px-4 sm:px-6 border-t border-white/[0.05]">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="text-sm text-text-muted">
           &copy; {new Date().getFullYear()}{" "}

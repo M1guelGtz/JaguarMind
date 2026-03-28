@@ -33,12 +33,12 @@ export default function CommunitySection() {
   if (isLoading) return null;
 
   return (
-    <section id="community" className="py-24 px-6 relative">
+    <section id="community" className="py-16 sm:py-24 px-4 sm:px-6 relative">
       {/* Background glow — neon enhanced */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-accent/[0.04] rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#ff6b00]/[0.03] rounded-full blur-[100px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-accent-light/[0.025] rounded-full blur-[80px]" />
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-0 left-1/4 w-[250px] h-[250px] sm:w-[500px] sm:h-[500px] bg-accent/[0.04] rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 right-1/4 w-[200px] h-[200px] sm:w-[400px] sm:h-[400px] bg-[#ff6b00]/[0.03] rounded-full blur-[100px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[150px] sm:w-[600px] sm:h-[300px] bg-accent-light/[0.025] rounded-full blur-[80px]" />
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">

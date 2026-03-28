@@ -30,7 +30,7 @@ export default function HeroSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen flex flex-col justify-end overflow-hidden pb-16 sm:pb-24"
+      className="relative min-h-screen flex flex-col justify-end overflow-hidden pb-8 sm:pb-16 lg:pb-24"
     >
       {/* 3D Jaguar — disperses on scroll */}
       <div className="absolute inset-0 z-0">
@@ -41,14 +41,14 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/60 via-transparent via-40% to-black/90 pointer-events-none" />
 
       {/* Neon ambient glow */}
-      <div className="absolute inset-0 z-[1] pointer-events-none">
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-accent/[0.04] blur-[150px]" />
-        <div className="absolute top-1/4 left-1/4 w-[300px] h-[300px] rounded-full bg-[#ff6b00]/[0.03] blur-[100px]" />
+      <div className="absolute inset-0 z-[1] pointer-events-none overflow-hidden">
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] rounded-full bg-accent/[0.04] blur-[150px]" />
+        <div className="absolute top-1/4 left-1/4 w-[150px] h-[150px] sm:w-[300px] sm:h-[300px] rounded-full bg-[#ff6b00]/[0.03] blur-[100px]" />
       </div>
 
       {/* Text content — anchored to the bottom */}
       <motion.div
-        className="relative z-10 text-center px-6 max-w-5xl mx-auto w-full"
+        className="relative z-10 text-center px-4 sm:px-6 max-w-5xl mx-auto w-full"
         style={{ opacity, scale, y }}
       >
         {/* Small label above title */}
@@ -58,7 +58,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.6 }}
         >
-          <span className="text-xs sm:text-sm tracking-[0.3em] uppercase text-accent/70 font-medium">
+          <span className="text-xs sm:text-sm tracking-[0.15em] sm:tracking-[0.3em] uppercase text-accent/70 font-medium">
             Web3 Platform
           </span>
         </motion.div>
